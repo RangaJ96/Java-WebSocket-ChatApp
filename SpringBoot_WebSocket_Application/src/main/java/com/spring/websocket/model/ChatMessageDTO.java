@@ -8,7 +8,7 @@ public class ChatMessageDTO {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-	@Column(name = "chatId")
+    @Column(name = "chatId")
     private int chatId;
     @Column(name = "fromId")
     private String fromId;
