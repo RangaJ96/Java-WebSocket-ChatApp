@@ -15,7 +15,7 @@ import java.util.Optional;
 public class ChatController {
 
     @Autowired
-   private ChatService chatService;
+    private ChatService chatService;
 
     @GetMapping("/all")
     public List<ChatMessageDTO> findAllMessages(){
@@ -25,7 +25,7 @@ public class ChatController {
     @PostMapping("/save")
     public String saveMessage(@RequestBody ChatMessageDTO ChatMessageDTO){
         chatService.saveMessage(ChatMessageDTO);
-        return "Data saved";
+        return "Message saved";
     }
 
 
