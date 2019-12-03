@@ -20,11 +20,10 @@ import java.util.Map;
 @CrossOrigin("*")
 public class SocketRest {
 	
-	@Autowired
-	   private ChatService chatService;
+    @Autowired
+    private ChatService chatService;
 
     @Autowired
-
     private SimpMessagingTemplate simpMessagingTemplate;
 
     @RequestMapping(method = RequestMethod.POST)
